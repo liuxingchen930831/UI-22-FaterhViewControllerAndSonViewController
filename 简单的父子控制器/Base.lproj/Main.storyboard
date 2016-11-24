@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VoN-u7-jtv">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RGP-xO-5iI">
+                                        <state key="normal" title="one"/>
+                                        <connections>
+                                            <action selector="addChildVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GfB-8b-i7k"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vEX-Ic-WF7">
+                                        <color key="backgroundColor" red="1" green="0.5255720733" blue="0.7744719779" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="two"/>
+                                        <connections>
+                                            <action selector="addChildVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lgd-yw-MlD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofp-8L-t5A">
+                                        <color key="backgroundColor" red="0.4229737274" green="0.96367449449999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="three">
+                                            <color key="titleShadowColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="addChildVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rus-V1-abZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.88475539920000001" green="0.44833159049999999" blue="0.085289183680000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ofp-8L-t5A" firstAttribute="width" secondItem="RGP-xO-5iI" secondAttribute="width" id="3LJ-jo-NHa"/>
+                                    <constraint firstItem="vEX-Ic-WF7" firstAttribute="top" secondItem="VoN-u7-jtv" secondAttribute="top" id="4Q3-eW-pPS"/>
+                                    <constraint firstItem="RGP-xO-5iI" firstAttribute="top" secondItem="VoN-u7-jtv" secondAttribute="top" id="5Fs-dp-bOw"/>
+                                    <constraint firstItem="ofp-8L-t5A" firstAttribute="height" secondItem="RGP-xO-5iI" secondAttribute="height" id="5vp-90-PFN"/>
+                                    <constraint firstAttribute="bottom" secondItem="vEX-Ic-WF7" secondAttribute="bottom" id="ACk-SO-qCW"/>
+                                    <constraint firstItem="vEX-Ic-WF7" firstAttribute="height" secondItem="RGP-xO-5iI" secondAttribute="height" id="Ctr-GD-ReH"/>
+                                    <constraint firstAttribute="bottom" secondItem="ofp-8L-t5A" secondAttribute="bottom" id="EEr-2d-V2w"/>
+                                    <constraint firstAttribute="bottom" secondItem="RGP-xO-5iI" secondAttribute="bottom" id="GAy-db-2Ln"/>
+                                    <constraint firstItem="RGP-xO-5iI" firstAttribute="leading" secondItem="VoN-u7-jtv" secondAttribute="leading" id="Qlh-jW-gz8"/>
+                                    <constraint firstAttribute="trailing" secondItem="ofp-8L-t5A" secondAttribute="trailing" id="de5-pc-hwv"/>
+                                    <constraint firstAttribute="height" constant="44" id="mjz-n7-COD"/>
+                                    <constraint firstItem="vEX-Ic-WF7" firstAttribute="width" secondItem="RGP-xO-5iI" secondAttribute="width" id="qjU-zC-qKP"/>
+                                    <constraint firstItem="ofp-8L-t5A" firstAttribute="leading" secondItem="vEX-Ic-WF7" secondAttribute="trailing" id="umf-jQ-rTx"/>
+                                    <constraint firstItem="ofp-8L-t5A" firstAttribute="top" secondItem="VoN-u7-jtv" secondAttribute="top" id="xqn-ch-ljD"/>
+                                    <constraint firstItem="vEX-Ic-WF7" firstAttribute="leading" secondItem="RGP-xO-5iI" secondAttribute="trailing" id="zZr-vN-uB3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="VoN-u7-jtv" secondAttribute="trailing" id="2an-Vi-ESM"/>
+                            <constraint firstItem="VoN-u7-jtv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7pO-nw-SNz"/>
+                            <constraint firstItem="VoN-u7-jtv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="nTV-3u-dcR"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="161" y="-47"/>
+        </scene>
+    </scenes>
+</document>
